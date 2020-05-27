@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Tell Your Tale</string>
+    <string name="story_begin">A global pandemic COVID-19 has hit several countries globally, seriously affecting their GDP and human life.</string>
+    <string name="intro">Since 2020 has been a wild year, Here\'s your chance to give the rest of the year your twist…</string>
+    <string name="story_begins">A global pandemic COVID-19 has hit several countries heavily damaging life and livelihood. \nYou come up with an ingenious cure…</string>
+    <string name="generic_comment_box">Generic comment box</string>
+    <string name="first_frag_first_option">Doggos be made to rule the world.</string>
+    <string name="first_frag_second_option">Sacrifice a virgin.</string>
+    <string name="first_frag_third_option">Administer essential oils mixed with garlic.</string>
+    <string name="then">Then…</string>
+    <string name="second_frag_first_option">Cats revolt.</string>
+    <string name="second_frag_second_option">Decision unanimously accepted.</string>
+    <string name="people_nominate">People nominate…</string>
+    <string name="second_frag_2a">You, lol.</string>
+    <string name="second_frag_2b">Salmon Khan.</string>
+    <string name="now">Now…</string>
+    <string name="second_frag_3a">People stink as well.</string>
+    <string name="second_frag_3b">You\'d think the other option will be it worked. It never works, Karen.</string>
+    <string name="next">Next…</string>
+    <string name="third_frag_first_option">They decide to break every possible ceramic in hooman\'s house.</string>
+    <string name="third_frag_second_option">They form a committee to find a real cure.</string>
 </resources>
