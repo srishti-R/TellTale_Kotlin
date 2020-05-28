@@ -15,36 +15,40 @@
             android:layout_height="wrap_content"
             android:text="@string/then"
             style="@style/DefaultTextStyle"
-            android:layout_marginTop="24dp" />
+            android:layout_marginTop="@dimen/margin_top" />
 
         <TextView
+            android:id="@+id/opt_cats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/options_background"
             android:text="@string/second_frag_first_option"
             style="@style/DefaultTextStyle"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="@dimen/margin_top"
             android:padding="8dp" />
 
         <TextView
+            android:id="@+id/opt_accepted"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/options_background"
             android:text="@string/second_frag_second_option"
             style="@style/DefaultTextStyle"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="@dimen/margin_top"
             android:padding="8dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="@dimen/margin_top"
             android:text="@string/generic_comment_box"
             style="@style/DefaultTextStyle" />
 
         <com.airbnb.lottie.LottieAnimationView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/lottie_size"
+            android:layout_height="@dimen/lottie_size"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_top"
             app:lottie_fileName="dog.json"
             app:lottie_loop="true"
             app:lottie_autoPlay="true" />
@@ -62,7 +66,7 @@
             android:layout_height="wrap_content"
             android:text="@string/people_nominate"
             style="@style/DefaultTextStyle"
-            android:layout_marginTop="24dp" />
+            android:layout_marginTop="@dimen/margin_top" />
 
         <TextView
             android:layout_width="match_parent"
@@ -70,7 +74,7 @@
             android:background="@drawable/options_background"
             android:text="@string/second_frag_2a"
             style="@style/DefaultTextStyle"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="@dimen/margin_top"
             android:padding="8dp" />
 
         <TextView
@@ -79,13 +83,13 @@
             android:background="@drawable/options_background"
             android:text="@string/second_frag_2b"
             style="@style/DefaultTextStyle"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="@dimen/margin_top"
             android:padding="8dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="@dimen/margin_top"
             android:text="@string/generic_comment_box"
             style="@style/DefaultTextStyle" />
 
@@ -101,7 +105,7 @@
             android:layout_height="wrap_content"
             android:text="@string/now"
             style="@style/DefaultTextStyle"
-            android:layout_marginTop="24dp" />
+            android:layout_marginTop="@dimen/margin_top" />
 
         <TextView
             android:layout_width="match_parent"
@@ -109,7 +113,7 @@
             android:background="@drawable/options_background"
             android:text="@string/second_frag_3a"
             style="@style/DefaultTextStyle"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="@dimen/margin_top"
             android:padding="8dp" />
 
         <TextView
@@ -118,13 +122,13 @@
             android:background="@drawable/options_background"
             android:text="@string/second_frag_3b"
             style="@style/DefaultTextStyle"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="@dimen/margin_top"
             android:padding="8dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="@dimen/margin_top"
             android:text="@string/generic_comment_box"
             style="@style/DefaultTextStyle" />
 

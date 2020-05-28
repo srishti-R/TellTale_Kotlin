@@ -1,51 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:layout_margin="@dimen/default_margin">
+    android:layout_height="match_parent">
 
-    <TextView
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/intro"
-        style="@style/DefaultTextStyle" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/story_begins"
-        style="@style/DefaultTextStyle"
-        android:layout_marginTop="24dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/options_background"
-        android:text="@string/first_frag_first_option"
-        style="@style/DefaultTextStyle"
-        android:layout_marginTop="18dp"
-        android:padding="8dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/options_background"
-        android:text="@string/first_frag_second_option"
-        style="@style/DefaultTextStyle"
-        android:layout_marginTop="18dp"
-        android:padding="8dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/options_background"
-        android:text="@string/first_frag_third_option"
-        style="@style/DefaultTextStyle"
-        android:layout_marginTop="18dp"
-        android:padding="8dp" />
-
-
-</LinearLayout>
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation" />
+</RelativeLayout>
