@@ -28,7 +28,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/DefaultTextStyle"
-            android:text="@{model.finalStory}" />
+            android:text="@{model.finalStory}"
+            android:background="@drawable/options_background"
+            android:padding="@dimen/default_margin" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="@dimen/lottie_size"
@@ -36,7 +38,8 @@
             app:lottie_fileName="celebration.json"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_top" />
 
         <Button
             android:id="@+id/btn_retry"
