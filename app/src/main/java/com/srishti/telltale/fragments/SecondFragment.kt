@@ -41,7 +41,7 @@ class SecondFragment : Fragment() {
             binding.lottieSpot.visibility = View.VISIBLE
         }
         binding.optYou.setOnClickListener {
-            model.optionTwoSelected(binding.optYou)
+            model.optionTwoSelected(it as TextView)
             binding.comments2.text = getString(R.string.comment_gods_pleased)
             binding.btnRead2.visibility = View.VISIBLE
         }
