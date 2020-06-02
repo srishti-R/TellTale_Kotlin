@@ -1,53 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:layout_margin="@dimen/default_margin">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
+    <data>
+
+        <variable
+            name="model"
+            type="com.srishti.telltale.StoryViewModel" />
+    </data>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/intro"
-        style="@style/DefaultTextStyle" />
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/default_margin">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/story_begins"
-        style="@style/DefaultTextStyle"
-        android:layout_marginTop="@dimen/margin_top" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intro"
+            style="@style/DefaultTextStyle" />
 
-    <TextView
-        android:id="@+id/opt_doggos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/options_background"
-        android:text="@string/first_frag_first_option"
-        style="@style/DefaultTextStyle"
-        android:layout_marginTop="@dimen/margin_top"
-        android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/story_begins"
+            style="@style/DefaultTextStyle"
+            android:layout_marginTop="@dimen/margin_top" />
 
-    <TextView
-        android:id="@+id/opt_virgin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/options_background"
-        android:text="@string/first_frag_second_option"
-        style="@style/DefaultTextStyle"
-        android:layout_marginTop="@dimen/margin_top"
-        android:padding="8dp" />
+        <TextView
+            android:id="@+id/opt_doggos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/options_background"
+            android:text="@string/first_frag_first_option"
+            style="@style/DefaultTextStyle"
+            android:layout_marginTop="@dimen/margin_top"
+            android:padding="8dp" />
 
-    <TextView
-        android:id="@+id/opt_oils"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/options_background"
-        android:text="@string/first_frag_third_option"
-        style="@style/DefaultTextStyle"
-        android:layout_marginTop="@dimen/margin_top"
-        android:padding="8dp" />
+        <TextView
+            android:id="@+id/opt_virgin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/options_background"
+            android:text="@string/first_frag_second_option"
+            style="@style/DefaultTextStyle"
+            android:layout_marginTop="@dimen/margin_top"
+            android:padding="8dp" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/opt_oils"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/options_background"
+            android:text="@string/first_frag_third_option"
+            style="@style/DefaultTextStyle"
+            android:layout_marginTop="@dimen/margin_top"
+            android:padding="8dp" />
+
+    </LinearLayout>
+</layout>

@@ -11,7 +11,12 @@
         tools:layout="@layout/fragment_first">
         <action
             android:id="@+id/action_firstFragment_to_secondFragment"
-            app:destination="@id/secondFragment" />
+            app:destination="@id/secondFragment">
+            <argument
+                android:name="option_selected"
+                app:argType="integer"
+                android:defaultValue="0" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -20,11 +25,41 @@
         tools:layout="@layout/fragment_second">
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
+            app:destination="@id/thirdFragment"
+            app:popUpTo="@id/firstFragment"
+            app:popUpToInclusive="false">
+            <argument
+                android:name="option_selected"
+                app:argType="integer"
+                android:defaultValue="0" />
+        </action>
+        <action
+            android:id="@+id/action_secondFragment_to_storyFragment"
+            app:destination="@id/storyFragment"
+            app:popUpTo="@id/firstFragment" />
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
         android:name="com.srishti.telltale.fragments.ThirdFragment"
         android:label="fragment_third"
-        tools:layout="@layout/fragment_third" />
+        tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/action_thirdFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:popUpTo="@id/firstFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_thirdFragment_to_storyFragment"
+            app:destination="@id/storyFragment"
+            app:popUpTo="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storyFragment"
+        android:name="com.srishti.telltale.fragments.StoryFragment"
+        android:label="fragment_story"
+        tools:layout="@layout/fragment_story">
+        <action
+            android:id="@+id/action_storyFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
 </navigation>

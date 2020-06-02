@@ -19,4 +19,15 @@
     <string name="next">Next…</string>
     <string name="third_frag_first_option">They decide to break every possible ceramic in hooman\'s house.</string>
     <string name="third_frag_second_option">They form a committee to find a real cure.</string>
+    <string name="exit">Exit?</string>
+    <string name="retry">Retry?</string>
+    <string name="rules">Rules</string>
+    <string name="read_full_story">Read full story!</string>
+    <string name="end">Nice work! Here\'s your entire finished story, with some extra added bits. Take a look!</string>
+    <string name="background">background</string>
+    <string name="spot_intro">Meet Spot of the house Canine, First of his name, King of the hooman land, breaker of branches.</string>
+    <string name="comment_gods_pleased">Lo Behold, the gods are pleased. Corona vanishes.</string>
+    <string name="comment_not_pleased">Be prepared to face an alien invasion next.</string>
+    <string name="comment_cats_evil">Even if they could, probably they\'ll break that vial containing the cure too, you know, out of habit.</string>
+    <string name="full_story">A global pandemic COVID-19 has hit several countries heavily damaging life and livelihood. \nYou come up with an ingenious cure- %1$s . The people of the land wonder if you\'re okay in the head. Somehow (Don\'t ask me how), you convince them. Then, %2$s. Next %3$s.</string>
 </resources>
